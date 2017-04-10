@@ -1,0 +1,80 @@
+Letter : a
+ Frequency : 0.07872833552037356
+
+Letter : b
+ Frequency : 0.019335707834148504
+
+Letter : c
+ Frequency : 0.03989161369484824
+
+Letter : d
+ Frequency : 0.038710611973619184
+
+Letter : e
+ Frequency : 0.11465941819049405
+
+Letter : f
+ Frequency : 0.013599413759607356
+
+Letter : g
+ Frequency : 0.03067366519538506
+
+Letter : h
+ Frequency : 0.02360810511426575
+
+Letter : i
+ Frequency : 0.08614325397501661
+
+Letter : j
+ Frequency : 0.002259752211182876
+
+Letter : k
+ Frequency : 0.01016377238875918
+
+Letter : l
+ Frequency : 0.05241057277731386
+
+Letter : m
+ Frequency : 0.027330049932684605
+
+Letter : n
+ Frequency : 0.07198657100495919
+
+Letter : o
+ Frequency : 0.05960735527190306
+
+Letter : p
+ Frequency : 0.027996387123161607
+
+Letter : q
+ Frequency : 0.0019223231479745734
+
+Letter : r
+ Frequency : 0.07186898208899266
+
+Letter : s
+ Frequency : 0.0872271170265342
+
+Letter : t
+ Frequency : 0.06682117963837148
+
+Letter : u
+ Frequency : 0.033315155336662176
+
+Letter : v
+ Frequency : 0.010243869186591455
+
+Letter : w
+ Frequency : 0.009219652686651102
+
+Letter : x
+ Frequency : 0.002651715264404642
+
+Letter : y
+ Frequency : 0.015341093065662332
+
+Letter : z
+ Frequency : 0.004284326590432693
+
+Frequencies added up : 1.0000000000000002
+
