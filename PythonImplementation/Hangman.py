@@ -107,6 +107,23 @@ def isevaluable(s):
     except:
         return False
 
+def removeWordsWithLetterInPos(letter , pos) :
+    global numLetters
+    if pos == 0 :
+        return
+    if pos > numLetters :
+        return
+    f = open("TempDict.txt" , "r+")
+    d = f.readlines()
+    f.seek(0)
+    for i in d :
+        if i[pos - 1] == letter :
+            print("Found word : {} contains letter {} in {} pos.\n".format(i , letter , pos - 1))
+        if i[pos - 1] != letter :
+            f.write(i)
+    f.truncate()
+    f.close()
+
 try :
     os.remove("TempDict.txt")
 except OSError :
@@ -140,9 +157,18 @@ while solved == 0 :
             print("Please enter 'no' or at least one index.\n")
 
     if val != "no" :
+        tempVals = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26]
         for i in range(len(vals)) :
             if vals[i] != 0 :
+                print("vals[i] : {}\n".format(vals[i]))
+                tempVals[vals[i]] = 0
                 removeWords(letter , vals[i])
+        for i in tempVals :
+            removeWordsWithLetterInPos(letter , i)
     if val == "no" :
         removeWord(letter)
+
+
+
+
 
