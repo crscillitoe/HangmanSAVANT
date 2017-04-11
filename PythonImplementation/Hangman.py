@@ -1,4 +1,5 @@
 import sys
+import os
 numLetters = 0
 letters = ['a' , 'b' , 'c' , 'd' , 'e' , 'f' , 'g' , 'h' , 'i' , 'j' ,
             'k' , 'l' , 'm' , 'n' , 'o' , 'p' , 'q' , 'r' , 's' , 't' ,
@@ -97,7 +98,10 @@ def removeWord(letter) :
     f.close()
 
 
-
+try :
+    os.remove("TempDict.txt")
+except OSError :
+    pass
 start()
 solved = 0
 while solved == 0 :
