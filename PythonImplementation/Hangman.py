@@ -11,10 +11,10 @@ frequencies = [0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0
 
 def isGuessed(letter) :
     global guessedLetters
-    for i in range(6) :
+    for i in range(26) :
         if guessedLetters[i] == letter :
-            return True
-    return False
+            return 1
+    return 0
 
 def getGuess() :
     global totals
@@ -100,6 +100,12 @@ def removeWord(letter) :
     f.truncate()
     f.close()
 
+def isevaluable(s):
+    try:
+        eval(s)
+        return True
+    except:
+        return False
 
 try :
     os.remove("TempDict.txt")
@@ -121,8 +127,18 @@ while solved == 0 :
     while val != "done" and val != "no" :
         val = input()
         if val != "done" and val != "no" :
-            vals[counter] = eval(val)
-            counter = counter + 1
+            if isevaluable(val) :
+                if eval(val) > 0 and eval(val) <= numLetters :
+                    vals[counter] = eval(val)
+                    counter = counter + 1
+                else :
+                    print("Please enter a value between 1 and {}\n".format(numLetters))
+            else :
+                print("Please enter a value between 1 and {}\n".format(numLetters))
+        elif val == "done" and counter == 0 :
+            val = "text"
+            print("Please enter 'no' or at least one index.\n")
+
     if val != "no" :
         for i in range(len(vals)) :
             if vals[i] != 0 :
