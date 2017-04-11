@@ -25,6 +25,9 @@ def getGuess() :
     filePath = "TempDict.txt"
     f = open("TempDict.txt" , "r")
     d = f.readlines()
+    if len(d) == 0 :
+        print("Error, no words found.\n")
+        sys.exit()
     if len(d) == 1 :
         for i in d :
             f.close()
