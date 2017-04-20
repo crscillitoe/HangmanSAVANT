@@ -1,5 +1,5 @@
 [package]
-name = "RustImplementation"
+name = "rust_implementation"
 version = "0.1.0"
 authors = ["ftlc <harrysadoyan@gmail.com>"]
 
