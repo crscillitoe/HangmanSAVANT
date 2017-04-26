@@ -1,4 +1,5 @@
 aachen
+ambigram
 aaliyah
 aaron
 abbas
@@ -23396,6 +23397,7 @@ defending
 defends
 defense
 defensed
+defenestrate
 defenseless
 defenses
 defensible
